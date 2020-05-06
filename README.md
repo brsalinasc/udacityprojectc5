@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/brsalinasc/udacityprojectc5.svg?style=svg)](https://circleci.com/gh/brsalinasc/udacityprojectc5)
 
 ## Project Overview
 
@@ -30,27 +30,30 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ### Running `app.py`
 
-1. Standalone:
-app.py contains the web app built using flask framework.
+#### 1. Standalone:
+`app.py` contains the web app built using flask framework.
 
-python app.py
+`python app.py`
 
-2. Run in Docker:
-run_docker.sh contains the script to run the app in the docker.
+#### 2. Run in Docker:  
+`run_docker.sh` contains the script to run the app in the docker.
 
-./run_docker.sh
+`./run_docker.sh`
 
-3. Run in Kubernetes:
-run_kubernetes.sh contains the script to run app in the Kubernetes.
+#### 3. Run in Kubernetes: 
+`run_kubernetes.sh` contains the script to run app in the Kubernetes.
 
-./run_kubernetes.sh
+`./run_kubernetes.sh`
 
+### Verify that application is running
+`make_prediction.sh` contains the script to check the predictions.
+
+`./make_prediction.sh`
 
 ### Upload to Docker Hub
+`upload_docker.sh` contains the script to upload the docker image to the Docker Hub.
 
-upload_docker.sh contains the script to upload the docker image to the Docker Hub.
-
-./upload_docker.sh
+`./upload_docker.sh`
 
 
 ### Kubernetes Steps
