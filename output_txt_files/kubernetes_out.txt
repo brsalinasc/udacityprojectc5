@@ -1,1 +1,18 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) bcsalinasc@BCSALINASC-W10:/mnt/c/Repo GIT/proyectoc5/udacityprojectc5$ ./run_kubernetes.sh 
+deployment.apps/app created
+NAME                   READY   STATUS              RESTARTS   AGE
+app-6dcb6bcb67-r9fc6   0/1     ContainerCreating   0          0s
+service/app exposed
+
+(.devops) bcsalinasc@BCSALINASC-W10:/mnt/c/Repo GIT/proyectoc5/udacityprojectc5$ kubectl get pod
+NAME                   READY   STATUS    RESTARTS   AGE
+app-6dcb6bcb67-r9fc6   1/1     Running   0          2m13s
+
+(.devops) bcsalinasc@BCSALINASC-W10:/mnt/c/Repo GIT/proyectoc5/udacityprojectc5$ ./make_prediction.sh 
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
